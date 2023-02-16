@@ -1,0 +1,53 @@
+body {
+     color:rgb(220, 126, 151);
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 18px;
+    }
+    
+    header,footer{
+     background-color: rgb(114, 199, 202);
+     color: rgb(39, 68, 200);
+     text-align: center;
+    }
+    
+    .site-title {
+     color: rgb(223, 227, 15);
+     text-decoration: underline rgb(129, 215, 92);
+    }
+    
+    #my-image{
+     box-shadow: 0 0 2px 1px black;
+    
+    }
+    
+    article ol li{
+     background-color:rgb(189, 223, 225);
+     list-style: square;
+    }
+    
+    article ol li:nth-child(odd){
+     background-color: rgb(171, 226, 160);
+    }
+    
+    nav ul li { /*Remove the bullets from the unordered list in navigation */
+     list-style-type: none;
+    }
+    
+    nav ul li a{/*Remove the underline from the links*/
+     text-decoration: none;
+    }
+    
+    /*Add a background and border to the links*/
+    nav ul li a,
+    nav ul li a:link{/*after the user has visited the link*/
+     background-color: rgb(187, 225, 225);
+     border: 3px double rgb(4, 51, 57); 
+    }
+    
+    /*Change the background colour on hover or focus state of the links*/
+    nav ul li a:hover,/*when the user hovers their mouse over the link*/
+    nav ul li a:focus{
+     background-color: rgb(71, 93, 204);
+    }
+    
+   
