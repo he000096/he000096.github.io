@@ -1,0 +1,28 @@
+/*position of site-title image and change font color size position*/
+.site-title{
+    height: 500px;
+    position: relative;
+    background-position: top left;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('../images/lone-starfish-wide.jpg');
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size:cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 480%;
+    text-align: center;
+    line-height: 880%;
+}
+
+/*make content list in same line*/
+.content li{
+    background-color: aquamarine;
+    display: inline-block;/*把contact改成一行*/
+    padding: 10px;
+    height: 4px;
+}
+/*Remove the underline from the links*/
+header nav ul li a{
+    text-decoration: none;
+}
