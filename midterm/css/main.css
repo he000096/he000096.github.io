@@ -28,7 +28,7 @@ body{
 
 /*make content list in same line*/
 .content li{
-    display: inline-block;/*把contact改成一行*/
+    display: inline;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -36,10 +36,12 @@ body{
 /*Remove the underline from the links*/
 header nav ul li a{
     text-decoration: none;
-    border-right: 1px solid black;
+    border-left: 2px solid grey;
     padding:1px 80px;
     color: black;
+
 }
+
 
 
 /*adjust the h2 font size*/
@@ -104,6 +106,13 @@ img{
     height: 55px;
 }
 
+.button{
+    margin-top: 20px;
+    background-color:#D4E9E7;
+    border: 1px solid black;
+    width: 60px;
+    height: 40px;
+}
 
 footer{
     margin-left: 680px;
