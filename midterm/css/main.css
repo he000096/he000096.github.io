@@ -13,7 +13,7 @@ body{
 .site-title{
     height: 300px;
     width: auto;
-    background-position: top left;
+    background-position: top center;
     background-image: url('../images/lone-starfish-wide.jpg');
     /*only one picture*/
    background-repeat: no-repeat;
@@ -34,13 +34,17 @@ body{
 }
 
 /*Remove the underline from the links*/
-header nav ul li a{
+li a{
     text-decoration: none;
     border-right: 2px solid grey;
     padding:1px 80px;
     color: black;
 }
 
+#contact a {
+    border-right:none;
+    color: none;
+}
 
 
 /*adjust the h2 font size*/
