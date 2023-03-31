@@ -1,0 +1,129 @@
+body{
+    background-color: #AAD4CF;
+    width: 800px;
+    margin: 20px auto;
+}
+
+/*position of site-title image and change font color size position*/
+.wrapper{
+    background-color: #D4E9E7;
+}
+
+/*position, size, font of fist image, */
+.site-title{
+    height: 140px;
+    width: auto;
+    background-position: top center;
+    background-image: url('../images/lone-starfish-wide.jpg');
+    /*only one picture*/
+   background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+   
+    
+   padding-left: 240px;
+   padding-bottom: 160px;
+   font-size: 56px;
+   line-height: 300px;
+}
+
+
+/*make content list in same line*/
+.content li{
+    display: inline;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Remove the underline from the links*/
+.content ul li a{
+    text-decoration: none;
+    border-right: 2px solid grey;
+    padding:1px 80px;
+    color: black;
+}
+ #last-li a {
+
+    border-right:none;
+    color: none;
+}
+
+
+
+/*adjust the h2 font size*/
+.h2{
+    margin-top: 70px;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+}
+
+/*make the picture and paragraph at right place*/
+.image{
+    width:780px;
+    margin: 0 auto;
+}
+img{
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+}
+
+/*adjust the size of h3*/
+.h3{
+    margin-top: 70px;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+}
+
+/*the box model for contact*/
+.bm{
+    width: auto;
+    height: auto;
+    /*add bm styles*/
+    padding: 10px;/*220 10left 10right*/
+    border: 1px solid black;
+    margin: 10px 10px;/*blanc of box in the page*/
+}
+
+/*adjust name and email the input box size and place*/
+.ne{
+    margin-top: 12px;
+}
+#yname{
+    margin-top: 2px;
+    width: 750px;
+    height: 15px;
+}
+#yemail{
+    margin-top: 2px;
+    width: 750px;
+    height: 15px;
+}
+
+/*adjust message the input box size and place*/
+.me{
+    margin-top: 12px;
+}
+#ymessage{
+    margin-top: 2px;
+    width: 750px;
+    height: 55px;
+}
+
+.button{
+    margin-top: 20px;
+    background-color:#D4E9E7;
+    border: 1px solid black;
+    width: 60px;
+    height: 40px;
+    
+}
+
+.button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+footer{
+    margin-left: 680px;
+}
