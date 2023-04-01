@@ -7,11 +7,19 @@ body{
 /*position of site-title image and change font color size position*/
 .wrapper{
     background-color: #D4E9E7;
+<<<<<<< HEAD
 }
 
 /*position, size, font of fist image, */
 .site-title{
     height: 140px;
+=======
+} 
+
+/*position, size, font of fist image, */
+.site-title{
+    height: 300px;
+>>>>>>> 39931d9f0010cccc88187e1d60ed3dcd504a174c
     width: auto;
     background-position: top center;
     background-image: url('../images/lone-starfish-wide.jpg');
@@ -19,12 +27,19 @@ body{
    background-repeat: no-repeat;
     background-size:cover;
     color: white;
+<<<<<<< HEAD
    
     
    padding-left: 240px;
    padding-bottom: 160px;
    font-size: 56px;
    line-height: 300px;
+=======
+    line-height: 730%;
+    
+    text-align: center;
+    font-size: 340%;
+>>>>>>> 39931d9f0010cccc88187e1d60ed3dcd504a174c
 }
 
 
@@ -36,20 +51,32 @@ body{
 }
 
 /*Remove the underline from the links*/
+<<<<<<< HEAD
 .content ul li a{
+=======
+li a{
+>>>>>>> 39931d9f0010cccc88187e1d60ed3dcd504a174c
     text-decoration: none;
     border-right: 2px solid grey;
     padding:1px 80px;
     color: black;
 }
+<<<<<<< HEAD
  #last-li a {
 
+=======
+
+#contact a {
+>>>>>>> 39931d9f0010cccc88187e1d60ed3dcd504a174c
     border-right:none;
     color: none;
 }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 39931d9f0010cccc88187e1d60ed3dcd504a174c
 /*adjust the h2 font size*/
 .h2{
     margin-top: 70px;
@@ -126,4 +153,9 @@ img{
 }
 footer{
     margin-left: 680px;
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> 39931d9f0010cccc88187e1d60ed3dcd504a174c
