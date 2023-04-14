@@ -1,0 +1,115 @@
+@media screen and (max-width: 760px){
+*{
+    box-sizing: border-box;
+}
+/* define body color and position*/
+body{
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+/* define wrapper class header color and position*/
+.wrapper{
+    background-color: #222;
+    color: #c78b07;
+    height: 540px;
+    
+}
+
+/* clean point underline from content and change content text color*/
+a{
+    text-decoration: none;
+    color: #c78b07;
+}
+
+/*put text ul in the center, define font size, style. clear the point in front of the li*/
+nav ul{
+    padding-left: 0;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    list-style:none;
+}
+/*adjust centent distance, Set the bottom margin to 40px*/
+li{
+    margin-bottom: 40px;
+ }
+/*put a background after image*/
+.xx{
+    background-color: #c78b07;
+    height: 180px;
+    margin-left: 1%;
+    margin-right: 1%;
+    background-size: cover;
+}
+/*change Home button color*/
+ul li:first-child a{
+    color: #222;
+}
+/*adjust search box size and position*/
+#search{
+    margin-top: 3px;
+    margin-left: 1px;
+    width: 640px;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+.fa-magnifying-glass{
+    /*set search sign border size color*/
+    border: 1px solid #c78b07;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin-right: 1%;
+    font-size: 150%;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* when screen become mobile size do something*/
+@media screen and (min-width: 760px)and (max-width: 1200px){
+    *{
+        box-sizing: border-box;
+    }
+    /* define body color and position*/
+    body{
+        background-color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4;
+        font-size: 1.5rem;
+    }
+    /* define wrapper class header color and position*/
+    .wrapper{
+        background-color: black;
+        color: #c78b07;
+    }
+    /* make the content bacome a line*/
+    .content li{
+        display: inline;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /* clean underlin from content and change content text color*/
+    a{
+        text-decoration: none;
+        color: #c78b07;
+    }
+    }
+
+
+
+
