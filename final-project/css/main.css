@@ -1,115 +1,824 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
 @media screen and (max-width: 760px){
 *{
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
-/* define body color and position*/
+    /* define body color and position*/
 body{
     background-color: white;
     font-family: 'Open Sans', sans-serif;
 }
-/* define wrapper class header color and position*/
 .wrapper{
+    margin: 2%;
+}
+/*set header background and size*/
+header{
     background-color: #222;
-    color: #c78b07;
-    height: 540px;
-    
+    height: 520px;
+}
+/*set yellow after images and home, and position*/
+.xx{
+    width: 95%;
+    height: 140px;
+    background-color: #c78b06;
+    /*add styles*/
+    padding-top: 5px;/*10left 10right*/
+    border: 15px solid #222;
+    margin: auto;
 }
 
-/* clean point underline from content and change content text color*/
-a{
-    text-decoration: none;
-    color: #c78b07;
-}
-
-/*put text ul in the center, define font size, style. clear the point in front of the li*/
-nav ul{
-    padding-left: 0;
+/*set all ul list at center and font size, remove the point in front of ul list*/
+ul{
     font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
     text-align: center;
     list-style:none;
 }
-/*adjust centent distance, Set the bottom margin to 40px*/
-li{
-    margin-bottom: 40px;
- }
-/*put a background after image*/
-.xx{
-    background-color: #c78b07;
-    height: 180px;
-    margin-left: 1%;
-    margin-right: 1%;
-    background-size: cover;
+/*clear the ul list underline*/
+a{
+    text-decoration: none;
+    color: #c78b06;
 }
-/*change Home button color*/
+/*change home font color to black*/
 ul li:first-child a{
     color: #222;
 }
-/*adjust search box size and position*/
+/*adjust centent distance, Set the bottom margin to 40px*/
+.content li{
+    margin-bottom: 40px;
+ }
+ /*CSS Flexbox properties to put the serach box and search sign at the right place*/
+ .search{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+ }
+/*adjust the search box size*/
 #search{
-    margin-top: 3px;
-    margin-left: 1px;
-    width: 640px;
-    height: 50px;
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
+    width: 99%;
+    height: 30px;
 }
 .fa-magnifying-glass{
-    /*set search sign border size color*/
-    border: 1px solid #c78b07;
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-    margin-right: 1%;
-    font-size: 150%;
+     /*set search sign border size color, put them at center*/
+     border: 1px solid #c78b06;
+     width: 5%;
+     height: 34px;
+     color: #c78b06;
+     font-size: 140%;
+     display: flex;
+     justify-content:center;
+     align-items: center;
+}
+/* make the image fit the width of its container, but never scale up larger than its original size.*/
+img{
+    max-width: 100%;
+    height: auto;
+}
+/*set wec class background image size and position*/
+.wec{
+    height: 570px;
+    width: auto;
+    background-position: top center;
+    background-image: url('../images/main-banner.jpg');
+    /*only one picture*/
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+/*set h1 linehight font size and position*/
+h1{
+    line-height: 140%;
+    color: white;
+    text-align:left;
+    font-size: 340%;
+    padding-top: 50px;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-weight: 900; /*To make the font bold*/
+}
+/*set p class linehight font size and position*/
+.p{
+    font-size: 80%;
+    text-align: left;
+    color: white;
+    padding-top: 30px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+/*set this link font size, color and font position,set border position, size, color*/
+.connect li{
+    font-size: 120%;
+    background-color: #c78b06;
+    border: 2px solid transparent ; 
+    width: 235px;
+    height: 80px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 900;
+}
+/*add a black background betweent image and text*/
+.welcome{
+    position: absolute;
+    top: 600px;
+    bottom: auto;
+    left: 15px;
+    right: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/*set margin between connect words and sign*/
+.connect a{
+    margin-right: 5%;
+}
+
+.as{
+    background-color: #ffe6ac ;
+}
+/*adjust about-us.jpg position and size*/
+.aboutus img{
+    max-width: 96%;
+    margin-top:2%;
+    margin-left: 2%;
+}
+/*set h2 font weight size and position*/
+h2{
+    font-weight: 900;
+    font-size: 300%;
+    margin: 2%;
+}
+/*set all p1 font size weight and position*/
+.p1{
+    font-weight: 600;
+    font-size: 80%;
+    margin: 2%;
+    padding-bottom: 5%;
+} 
+/*set a grid for ss section, and set the background and size*/
+.ss{
+    display:grid;
+    border: 1px ssolid transparent;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-rows: 110px;
+    background-color: #ffe6ac;
+}
+/*set the first div in ss section position*/
+.ss div:nth-child(1) {
+    grid-column: 1/5;
+    grid-row: 1/5;
+}
+/*set the second div in ss section position*/
+.ss div:nth-child(2) {
+    grid-column: 1/3;
+    grid-row: 5/5;
+}
+/*adjust image in services size*/
+.services img{
+    width: 100%;
+    height: auto;
+}
+/*set all h3 font weight size and position*/
+h3{
+    font-weight: 900;
+    font-size: 200%;
+    margin: 2%;
+     
+}
+/*set the digital link position and color*/
+.digital li{
+    font-size: 120%;
+    background-color: #222;
+    border: 2px solid transparent ; 
+    width: 235px;
+    height: 80px;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+}
+/*set the text in digital link position and color*/
+.digital ul li a{
+    margin-right: 5%;
+    color: white;
+}
+
+/*set a grid for mat section, and set the background and size*/
+.mat{
+    display:grid;
+    border: 1px ssolid transparent;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-rows: 110px;
+    background-color: #ffe6ac;
+    margin-top: 2%;
+}
+/*set the first div in mat section position*/
+.mat div:nth-child(1) {
+    grid-column: 1/5;
+    grid-row: 1/5;
+}
+/*set the second div in mat section position*/
+.mat div:nth-child(2) {
+    grid-column: 1/3;
+    grid-row: 5/5;
+}
+/*adjust image in mat section size*/
+.mat img{
+    width: 100%;
+    height: auto;
+}
+
+/*set the marketing plans link position and color*/
+.mat li{
+    font-size: 120%;
+    background-color: #222;
+    border: 2px solid transparent ; 
+    width: 235px;
+    height: 80px;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+}
+/*set the text in marketing plans link position and color*/
+.mat ul li a{
+    margin-right: 5%;
+    color: white;
+}
+
+/*set a grid for vio section, and set the background and size*/
+.vio{
+    display:grid;
+    border: 1px ssolid transparent;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-rows: 110px;
+    background-color: #ffe6ac;
+    margin-top: 2%;
+}
+/*set the first div in vio section position*/
+.vio div:nth-child(1) {
+    grid-column: 1/5;
+    grid-row: 1/5;
+}
+/*set the second div in vio section position*/
+.vio div:nth-child(2) {
+    grid-column: 1/3;
+    grid-row: 5/5;
+}
+/*adjust image in vio section size*/
+.vio img{
+    width: 100%;
+    height: auto;
+}
+
+/*set the video plans link position and color*/
+.vio li{
+    font-size: 120%;
+    background-color: #222;
+    border: 2px solid transparent ; 
+    width: 235px;
+    height: 80px;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+}
+/*set the text in video plans link position and color*/
+.vio ul li a{
+    margin-right: 5%;
+    color: white;
+}
+
+/*set a grid for web section, and set the background and size*/
+.wes{
+    display:grid;
+    border: 1px ssolid transparent;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-rows: 110px;
+    background-color: #ffe6ac;
+    margin-top: 2%;
+}
+/*set the first div in web section position*/
+.wes div:nth-child(1) {
+    grid-column: 1/5;
+    grid-row: 1/5;
+}
+/*set the second div in web section position*/
+.wes div:nth-child(2) {
+    grid-column: 1/3;
+    grid-row: 5/5;
+}
+/*adjust image in web section size*/
+.wes img{
+    width: 100%;
+    height: auto;
+}
+
+/*set the web plans link position and color*/
+.wes li{
+    font-size: 120%;
+    background-color: #222;
+    border: 2px solid transparent ; 
+    width: 235px;
+    height: 80px;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+}
+/*set the text in web plans link position and color*/
+.wes ul li a{
+    margin-right: 5%;
+    color: white;
+}
+
+/*set a grid for print section, and set the background and size*/
+.prt{
+    display:grid;
+    border: 1px ssolid transparent;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-rows: 110px;
+    background-color: #ffe6ac;
+    margin-top: 2%;
+}
+/*set the first div in print section position*/
+.prt div:nth-child(1) {
+    grid-column: 1/5;
+    grid-row: 1/5;
+}
+/*set the second div in print section position*/
+.prt div:nth-child(2) {
+    grid-column: 1/3;
+    grid-row: 5/5;
+}
+/*adjust image in print section size*/
+.prt img{
+    width: 100%;
+    height: auto;
+}
+
+/*set the print plans link position and color*/
+.prt li{
+    font-size: 120%;
+    background-color: #222;
+    border: 2px solid transparent ; 
+    width: 235px;
+    height: 80px;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+}
+/*set the text in print plans link position and color*/
+.prt ul li a{
+    margin-right: 5%;
+    color: white;
+}
+
+/*set background image at ov class, and set image size position, set bottom margin*/
+.ov{
+    height: 340px;
+    width: auto;
+    background-position: center;
+    background-image: url('../images/vision.jpg');
+    /*only one picture*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    margin-bottom: 5%;
+}
+.ov h2{
+    padding-top: 5%;
+    font-size: 220%;
+}
+/*set the learn more link position and color*/
+.ov li{
+    font-size: 120%;
+    background-color: #082741;
+    border: 2px solid #c78b06 ; 
+    width: 235px;
+    height: 100px;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+}
+/*set the text in learn more link position and color*/
+.ov ul li a{
+    margin-right: 5%;
+    color: white;
+}
+
+
+/*set ot section fisrt div team1 image size*/
+.team1 img{
+    width: 100%;
+    height: auto;
+}
+/*set ot section fisrt div team1 backgroundcolor*/
+.team1{
+    background-color: #ffe6ac;
+}
+/*set ot section second div team2 image size*/
+.team2 img{
+    width: 100%;
+    height: auto;
+}
+/*set ot section second div team2 backgroundcolor*/
+.team2{
+    background-color: #ffe6ac;
+}
+/*set h4 margin and font weight*/
+h4{
+    margin: 2%;
+    font-weight: 900;
+}
+
+hr{
+    border: none;/*remove the default line style*/
+	border-top: 2px solid blue; /* define an initial style for the line */
+	border-color: #c78b06; /* change the color of the line to c78b06 */
+    margin: 2%;
+}
+/*set all cs section margin*/
+.cs{
+    margin: 2%;
+}
+/*let h2 back to the right place*/
+.cs h2{
+    margin: 0;
+}
+/*let h3 back to the right place*/
+.cs h3{
+    margin: 0;
+}
+/*adjust name the input box size */
+#yname{
+    margin-top: 2%;
+    width: 100%;
+    height: 25px;
+}
+.ne{
+    margin-top: 2%;
+    font-weight: 800;
+}
+/*adjust email the input box size */
+#yemail{
+    margin-top: 2%;
+    width: 100%;
+    height: 25px;
+}
+
+.em{
+    margin-top: 2%;
+    font-weight: 800;
+}
+/*adjust message the input box size */
+#ymessage{
+    margin-top: 2%;
+    width: 100%;
+    height: 155px;
+}
+
+.me{
+    margin-top: 2%;
+    font-weight: 800;
+}
+/*set button style*/
+.button{
+    margin-top: 5%;
+    background-color:#222;
+    border: 1px solid black;
+    width: 60px;
+    height: 35px;
+    color: #c78b06;
+    font-size: 130%;
+}
+/*set hoo section margin*/
+.hoo div{
+    margin: 2%;
+}
+.hoo table {
+    /* collapses the borders of the table cells so that they are flush with each other.*/
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 100%;
+  }
+  /*set table border color*/
+  .hoo th, .hoo td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  /*set the th background color and text position*/
+  .hoo th {
+    text-align: center;
+    background-color: #ffe6ac;
+  }
+/*set the background color of even rows in a table to white.*/
+  .hoo tr:nth-child(even) {
+    background-color: white;
+  }
+  /*set lo section margin*/
+.lo{
+    margin: 2%;
+}
+/*set lo section h2 back to the right place*/
+.lo h2{
+    margin: 0;
+}
+/*adjust map size*/
+.lo iframe{
+    width: 100%;
+}
+.wrapper1{
+    margin: 2%;
+}
+/*set footer background color , zise and font color*/
+footer{
+    background-color: #222;
+    color: #c78b06;
+    height: 120px;
+    margin: 2%;
+}
+/*set p in footer position*/
+footer p{
+    padding-top: 30px;
+    padding-left: 15px;
+}
 }
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 760px){
+*{
+    box-sizing: content-box;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/* when screen become mobile size do something*/
-@media screen and (min-width: 760px)and (max-width: 1200px){
-    *{
-        box-sizing: border-box;
-    }
     /* define body color and position*/
-    body{
-        background-color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        line-height: 1.4;
-        font-size: 1.5rem;
-    }
-    /* define wrapper class header color and position*/
-    .wrapper{
-        background-color: black;
-        color: #c78b07;
-    }
-    /* make the content bacome a line*/
-    .content li{
-        display: inline;
-        font-size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    /* clean underlin from content and change content text color*/
-    a{
-        text-decoration: none;
-        color: #c78b07;
-    }
-    }
+body{
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+/*set header background and size, let all the text or image algways at center in header*/
+header{
+    background-color: #222;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+
+/*The display: flex property is used to align the ul and search horizontally.*/
+.xx {
+    display: flex;
+    /*align the ul and search to the left and right respectively*/
+    justify-content: space-between;
+    /*Center align the ul and search vertically*/
+    align-items: center;
+    /*set all xx section marign*/
+    margin: 2%;
+    /* Add the following styles to evenly distribute the content */
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+  /*set image margin*/
+  .image{
+    margin-right: 50px;
+  }
+  /*adjust image size*/
+  .image img{
+    width: 70px;
+    height: 70px;
+  }
+ /*set all ul list at rightplace, remove the point in front of ul list*/
+.content ul {
+     display: flex;
+     flex-direction: row;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     flex: 1;
+     justify-content: space-evenly;
+  }
+      /*set li in content margin*/
+ .content li {
+     margin-right: 10%;
+      }
+      /*clean the underline from the link*/
+ .content li a {
+     text-decoration: none;
+     color: #c78b06;
+     font-weight: 900;
+  }
+ /*set home link font and background color*/
+ ul li:first-child a{
+    color: #222;
+    background-color: #c78b06;
+    padding: 10px;
+}
+.sch{
+    margin: 4%;
+}
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+  }
+  
+  .search input {
+    border: none;
+    background-color: white;
+    margin-right: auto;
+    height: 30px;
+  }
+  
+  .fa-magnifying-glass{
+    /*set search sign border size color, put them at center*/
+    border: 1px solid #c78b06;
+    width: 30px;
+    height: 30px;
+    color: #c78b06;
+    font-size: 140%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
 
 
 
+/* make the image fit the width of its container, but never scale up larger than its original size.*/
+img{
+    max-width: 100%;
+    height: auto;
+}
+/*set wec class background image size and position*/
+.wec{
+    height: 470px;
+    width: auto;
+    background-position: top center;
+    background-image: url('../images/main-banner.jpg');
+    /*only one picture*/
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+/*set h1 linehight font size and position*/
+h1{
+    line-height: 140%;
+    color: white;
+    text-align:left;
+    font-size: 340%;
+    padding-top: 50px;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-weight: 900; /*To make the font bold*/
+}
+/*set p class linehight font size and position*/
+.p{
+    font-size: 80%;
+    text-align: left;
+    color: white;
+    padding-top: 30px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+/*set this link font size, color and font position,set border position, size, color*/
+.connect li{
+    font-size: 120%;
+    background-color: #c78b06;
+    border: 2px solid transparent ; 
+    width: 235px;
+    height: 80px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 900;
+}
+/*add a black background betweent image and text*/
+.welcome{
+    position: absolute;
+    top: 230px;
+    bottom: auto;
+    left: 15px;
+    right: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/*set margin between connect words and sign*/
+.connect a{
+    margin-right: 5%;
+}
 
+
+.as{
+    background-color: #ffe6ac ;
+    
+}
+/*use flex to let all elements in a line*/
+.aboutus {
+    display: flex;
+    flex-direction: row;
+  }
+  
+.ims {
+    flex: 1;
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  
+  .abt {
+    flex: 2;
+    margin-right: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+  }
+
+/*set h2 font weight size and position*/
+h2{
+    font-weight: 900;
+    font-size: 200%;
+    
+}
+/*set all p1 font size weight and position*/
+.p1{
+    font-weight: 600;
+    font-size: 60%;
+    
+} 
+}

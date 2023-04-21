@@ -7,8 +7,8 @@
     <!-- Insert Font Awesome font library-->
     <script src="https://kit.fontawesome.com/41996d43a2.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <title>final-project</title>
     <!--Linking css pages-->
     <link href="css/main.css" rel="stylesheet">
@@ -24,14 +24,14 @@
                 <!--unordered list, list all the content link-->
                 <ul>
                     <li id="home"><a href="#home" target="_blank">Home</a></li>
-                    <li id="about"><a href="#about" target="_blank">About Us</a></li>
-                    <li id="services"><a href="#services" target="_blank">Services</a></li>
-                    <li id="team"><a href="#team" target="_blank">Team</a></li>
-                    <li id="contact"><a href="#contact" target="_blank">Contact</a></li>
+                    <li id="about"><a href="#about">About Us</a></li>
+                    <li id="services"><a href="#services">Services</a></li>
+                    <li id="team"><a href="#team">Team</a></li>
+                    <li id="contact"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
               <!-- Creating a search section -->
-        <section>
+        <section class="sch">
             <div class="search">
                 <input id="search" name="search" type="text" placeholder="Search">
                 <i class="fa-solid fa-magnifying-glass"></i> 
@@ -39,27 +39,29 @@
         </section>
     </section>
         </header>
-    </div>
     <!-- Creating the main part-->
     <main>
         <!-- Creating the welcome section -->
         <section class="wec">
             <div class="welcome">
                 <h1 id="title" class="h1" >Welcome to Three Star Media</h1>
-                <img src="images/main-banner.jpg" alt="main-banner">
                 <p class="p"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corporis magnam eum quibusdam deleniti nihil. Illum, commodi. Commodi, vitae. Explicabo a similique eius repudiandae sit neque facere, excepturi corporis atque.</p>
-            </div>
+
             <div class="connect">
                 <ul>
                     <li id="connect"><a href="#connect" target="_blank">Connect with us</a> <i class="fa-solid fa-play"></i></li>
                 </ul>
             </div>
+        </div>
         </section>
         <!-- Create About section -->
         <section class="as">
             <div class="aboutus">
+                <div class="ims">
                 <img src="images/about-us.jpg" alt="about-us">
-                <h2 id="aboutus" class="h2" >About Us</h2>
+                </div>
+                <div class="abt">
+                <h2 id="about" class="h2" >About Us</h2>
                 <p class="p1"> 
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corporis magnam eum quibusdam deleniti nihil. Illum, commodi. 
                     Commodi, vitae. Explicabo a similique eius repudiandae sit neque facere, excepturi corporis atque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
@@ -70,11 +72,12 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repudiandae harum molestiae possimus, ea exercitationem libero laborum non labore maiores nam doloremque hic cum aliquam vero nobis modi mollitia praesentium?
                 </p>
             </div>
+        </div>
         </section>
         <!-- Create services section -->
+        <h2 id="services" class="h2" >Our Services</h2>
         <section class="ss">
             <div class="services">
-                <h2 id="ourServices" class="h2" >Our Services</h2>
                 <img src="images/digital.jpg" alt="digital">
                 <h3>Digital Transformation</h3>
                 <p class="p1"> 
@@ -90,7 +93,7 @@
             </div>
         </section>
         <!-- Create marketing section -->
-        <section>
+        <section class="mat"> 
             <div class="marketing">
                 <img src="images/marketing.jpg" alt="marketing">
                 <h2 id="marketingh2" class="h2" >Marketing</h2>
@@ -107,7 +110,7 @@
             </div>
         </section>
         <!-- Create video section -->
-        <section>
+        <section class="vio">
                 <div class="video">
                     <img src="images/video.jpg" alt="video">
                     <h2 id="videoproduction" class="h2" >Video Production</h2>
@@ -124,7 +127,7 @@
                 </div>
         </section>
         <!-- Create web section -->
-        <section>
+        <section class="wes">
             <div class="web">
                 <img src="images/web.jpg" alt="web">
                 <h2 id="webdevelopment" class="h2" >Web Development</h2>
@@ -141,7 +144,7 @@
             </div>
         </section>
         <!-- Create print section -->
-        <section>
+        <section class="prt">
             <div class="print">
                 <img src="images/print.jpg" alt="print">
                 <h2 id="print-h2" class="h2" >Print</h2>
@@ -157,10 +160,10 @@
                 </ul>
             </div>
         </section>
+    </div>
         <!-- Create ourvision section -->
         <section class="ov">
             <div class="ourvision">
-                <img src="images/vision.jpg" alt="vision">
                 <div class="image-textourvision">
                   <h2>Our Vision</h2>
                   <p class="p1"> 
@@ -177,10 +180,12 @@
             </div>
         </section>
         <!-- Create team section -->
-        <section class="ot">
-            <div class="team">
+        <div class="wrapper1">
+        <section>
+            <h2>Our Team</h2>
+            <div class="team1">
                 <img src="images/john.jpg" alt="john">
-                <h2 id="john" class="h2" >John Doe</h2>
+                <h3 id="john" class="h3" >John Doe</h3>
                 <h4>CEO and Co-owner</h4>
                 <hr class="my-line">
                 <p class="p1"> 
@@ -188,9 +193,10 @@
                     Commodi, vitae. Explicabo a similique eius repudiandae sit neque facere, excepturi corporis atque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                     Sit suscipit quibusdam fuga id tempora eligendi neque cupiditate mollitia nostrum. Neque incidunt porro quod aperiam inventore pariatur enim sint a ipsam!
                 </p>
-
+            </div> 
+            <div class="team2">  
                 <img src="images/bob.jpg" alt="bob">
-                <h2 id="bob" class="h2" >Bob Rite</h2>
+                <h3 id="bob" class="h3" >Bob Rite</h3>
                 <h4>CFO and Co-owner</h4>
                 <hr class="my-line">
                 <p class="p1"> 
@@ -218,7 +224,7 @@
                 <input id="ymessage" name="yourmassage" type="text">
             </div>
             <div>
-                <button type="submit" class="button">SEND</button>
+                <button type="submit" class="button">Send</button>
             </div>
             </form>
         </section>
@@ -251,6 +257,7 @@
             <h2 id="location" class="h2">Location</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22431.55790025764!2d-75.78789578437502!3d45.3499278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680549187876!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
+    </div>
         <!-- footer-->
         <footer>
             <p>&copy;Copyright Three Star Media, 2020 </p>
