@@ -982,7 +982,7 @@ h2{
 .y3{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-   grid-template-rows: repeat(2, 1fr);
+   grid-template-rows: repeat(1, 1fr);
  }
 .y3 .vio {
   grid-column: 1 / 2;
@@ -1003,7 +1003,8 @@ h2{
 }
 /* reduce the size for services part*/
 h2 ,.y2 ,.y3{
-    margin: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 
